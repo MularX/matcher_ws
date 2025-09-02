@@ -1,0 +1,11 @@
+gmake[2]: Warning: File '/home/maciej/matcher_ws/src/csm/src/csm/laser_data.cpp' has modification time 2834 s in the future
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:174: CMakeFiles/csm.dir/src/csm/clustering.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:76: CMakeFiles/csm.dir/src/csm/laser_data.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:118: CMakeFiles/csm.dir/src/csm/utils.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:146: CMakeFiles/csm.dir/src/csm/sm_options.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:132: CMakeFiles/csm.dir/src/csm/logging.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:160: CMakeFiles/csm.dir/src/csm/orientation.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:104: CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/csm.dir/build.make:90: CMakeFiles/csm.dir/src/csm/math_utils.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/csm.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,77 @@
+[0.123s] Invoking command in '/home/maciej/matcher_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake /home/maciej/matcher_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/csm
+[0.836s] -- Found ament_cmake: 1.3.12 (/home/maciej/ros2_ws/install/ament_cmake/share/ament_cmake/cmake)
+[0.836s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.837s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.837s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.837s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.837s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.837s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.879s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.896s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.225s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.548s] -- Configuring done
+[1.590s] -- Generating done
+[1.598s] -- Build files have been written to: /home/maciej/matcher_ws/build/csm
+[1.626s] Invoked command in '/home/maciej/matcher_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake /home/maciej/matcher_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/csm
+[1.627s] Invoking command in '/home/maciej/matcher_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake --build /home/maciej/matcher_ws/build/csm -- -j8 -l8
+[1.838s] [35m[1mConsolidate compiler generated dependencies of target csm[0m
+[1.978s] [  4%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[1.980s] [  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[1.992s] [ 12%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[1.993s] [ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[1.993s] [ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[2.006s] [ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[2.015s] [ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[2.022s] [ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[6.203s] [ 37%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[6.236s] [ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[6.253s] [ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[6.256s] [ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[6.452s] [ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[6.561s] [ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[6.590s] [ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[6.713s] [ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[10.201s] [ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[10.758s] [ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[10.774s] [ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[11.201s] [ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[11.861s] [ 87%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[11.919s] [ 91%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[13.696s] [ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[34.749s] [100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[35.521s] [100%] Built target csm
+[35.552s] Invoked command in '/home/maciej/matcher_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake --build /home/maciej/matcher_ws/build/csm -- -j8 -l8
+[35.559s] Invoking command in '/home/maciej/matcher_ws/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake --install /home/maciej/matcher_ws/build/csm
+[35.577s] -- Install configuration: ""
+[35.578s] -- Execute custom install script
+[35.578s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/lib/libcsm.so
+[35.579s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/csm/algos.h
+[35.579s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/csm/csm.h
+[35.579s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/csm/laser_data.h
+[35.580s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/csm/laser_data_inline.h
+[35.580s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/csm/restrict.h
+[35.581s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[35.583s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/resource/csm
+[35.583s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/include/../gsl_eigen/gsl_eigen.h
+[35.584s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/library_path.sh
+[35.584s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/library_path.dsv
+[35.585s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[35.586s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[35.587s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/ament_prefix_path.sh
+[35.587s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/ament_prefix_path.dsv
+[35.587s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/path.sh
+[35.588s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/environment/path.dsv
+[35.588s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.bash
+[35.588s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.sh
+[35.589s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.zsh
+[35.589s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.dsv
+[35.589s] -- Symlinking: /home/maciej/matcher_ws/install/csm/share/csm/package.dsv
+[35.611s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/packages/csm
+[35.612s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[35.612s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[35.612s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[35.613s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/cmake/csmConfig.cmake
+[35.613s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/cmake/csmConfig-version.cmake
+[35.614s] -- Up-to-date symlink: /home/maciej/matcher_ws/install/csm/share/csm/package.xml
+[35.619s] Invoked command in '/home/maciej/matcher_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maciej/matcher_ws/install/turtlebot3_teleop:/home/maciej/matcher_ws/install/turtlebot3_example:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble /usr/bin/cmake --install /home/maciej/matcher_ws/build/csm

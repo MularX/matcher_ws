@@ -1,0 +1,29 @@
+[7.220s] Invoking command in '/home/maciej/matcher_ws/build/turtlebot3_example': PYTHONPATH=/home/maciej/matcher_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maciej/matcher_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maciej/matcher_ws/build/turtlebot3_example/build --no-deps symlink_data
+[9.319s] running develop
+[11.179s] running egg_info
+[11.180s] creating turtlebot3_example.egg-info
+[11.333s] writing turtlebot3_example.egg-info/PKG-INFO
+[11.334s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[11.334s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[11.334s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[11.334s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[11.334s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[11.539s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[11.542s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[11.610s] running build_ext
+[11.611s] Creating /home/maciej/matcher_ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[11.612s] Installing turtlebot3_absolute_move script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.613s] Installing turtlebot3_interactive_marker script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.614s] Installing turtlebot3_obstacle_detection script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.615s] Installing turtlebot3_patrol_client script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.616s] Installing turtlebot3_patrol_server script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.619s] Installing turtlebot3_relative_move script to /home/maciej/matcher_ws/install/turtlebot3_example/lib/turtlebot3_example
+[11.619s] 
+[11.619s] Installed /home/maciej/matcher_ws/build/turtlebot3_example
+[11.622s] running symlink_data
+[11.623s] creating /home/maciej/matcher_ws/install/turtlebot3_example/share/ament_index
+[11.623s] creating /home/maciej/matcher_ws/install/turtlebot3_example/share/ament_index/resource_index
+[11.623s] creating /home/maciej/matcher_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[11.624s] symbolically linking /home/maciej/matcher_ws/build/turtlebot3_example/resource/turtlebot3_example -> /home/maciej/matcher_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[11.625s] symbolically linking /home/maciej/matcher_ws/build/turtlebot3_example/package.xml -> /home/maciej/matcher_ws/install/turtlebot3_example/share/turtlebot3_example
+[11.877s] Invoked command in '/home/maciej/matcher_ws/build/turtlebot3_example' returned '0': PYTHONPATH=/home/maciej/matcher_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maciej/matcher_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/maciej/matcher_ws/build/turtlebot3_example/build --no-deps symlink_data

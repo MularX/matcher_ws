@@ -1,0 +1,3 @@
+Invoking command in '/home/maciej/matcher_ws/build/cartographer_ros_docs': /usr/bin/cmake /home/maciej/matcher_ws/src/cartographer_ros/docs -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/cartographer_ros_docs
+Invoked command in '/home/maciej/matcher_ws/build/cartographer_ros_docs' returned '0': /usr/bin/cmake /home/maciej/matcher_ws/src/cartographer_ros/docs -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/cartographer_ros_docs
+Invoking command in '/home/maciej/matcher_ws/build/cartographer_ros_docs': /usr/bin/cmake --build /home/maciej/matcher_ws/build/cartographer_ros_docs -- -j8 -l8

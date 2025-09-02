@@ -1,0 +1,949 @@
+[0.000000] (-) TimerEvent: {}
+[0.001208] (csm) JobQueued: {'identifier': 'csm', 'dependencies': OrderedDict()}
+[0.001390] (ros2_laser_scan_matcher) JobQueued: {'identifier': 'ros2_laser_scan_matcher', 'dependencies': OrderedDict([('csm', '/home/maciej/matcher_ws/install/csm')])}
+[0.001438] (csm) JobStarted: {'identifier': 'csm'}
+[0.035973] (csm) JobProgress: {'identifier': 'csm', 'progress': 'cmake'}
+[0.036594] (csm) Command: {'cmd': ['/usr/bin/cmake', '/home/maciej/matcher_ws/src/csm', '-DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/csm'], 'cwd': '/home/maciej/matcher_ws/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[0.097009] (-) TimerEvent: {}
+[0.197388] (-) TimerEvent: {}
+[0.203276] (csm) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.297508] (-) TimerEvent: {}
+[0.330497] (csm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.346831] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.397843] (-) TimerEvent: {}
+[0.498649] (-) TimerEvent: {}
+[0.540176] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.552305] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.553470] (csm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.554892] (csm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.559645] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.598794] (-) TimerEvent: {}
+[0.699326] (-) TimerEvent: {}
+[0.761356] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.774323] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.774682] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.775322] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.790064] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/home/maciej/ros2_ws/install/ament_cmake/share/ament_cmake/cmake)\n'}
+[0.799428] (-) TimerEvent: {}
+[0.899722] (-) TimerEvent: {}
+[1.000045] (-) TimerEvent: {}
+[1.100498] (-) TimerEvent: {}
+[1.200911] (-) TimerEvent: {}
+[1.301279] (-) TimerEvent: {}
+[1.401789] (-) TimerEvent: {}
+[1.502587] (-) TimerEvent: {}
+[1.602955] (-) TimerEvent: {}
+[1.703322] (-) TimerEvent: {}
+[1.804055] (-) TimerEvent: {}
+[1.840228] (csm) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.904235] (-) TimerEvent: {}
+[2.005085] (-) TimerEvent: {}
+[2.105420] (-) TimerEvent: {}
+[2.205807] (-) TimerEvent: {}
+[2.306244] (-) TimerEvent: {}
+[2.333277] (csm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.406394] (-) TimerEvent: {}
+[2.506813] (-) TimerEvent: {}
+[2.583099] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.607002] (-) TimerEvent: {}
+[2.622438] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.668333] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.707087] (-) TimerEvent: {}
+[2.722189] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.798637] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.807530] (-) TimerEvent: {}
+[2.908561] (-) TimerEvent: {}
+[3.009052] (-) TimerEvent: {}
+[3.029118] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.055320] (csm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.109177] (-) TimerEvent: {}
+[3.209767] (-) TimerEvent: {}
+[3.310374] (-) TimerEvent: {}
+[3.410855] (-) TimerEvent: {}
+[3.423333] (csm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.508529] (csm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.510957] (-) TimerEvent: {}
+[3.611637] (-) TimerEvent: {}
+[3.630382] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.693030] (csm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.711717] (-) TimerEvent: {}
+[3.812239] (-) TimerEvent: {}
+[3.886798] (csm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.888249] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.912419] (-) TimerEvent: {}
+[4.013004] (-) TimerEvent: {}
+[4.098230] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.100091] (csm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.113159] (-) TimerEvent: {}
+[4.213803] (-) TimerEvent: {}
+[4.314789] (-) TimerEvent: {}
+[4.415201] (-) TimerEvent: {}
+[4.486507] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.506556] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[4.512483] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/maciej/matcher_ws/build/csm\n'}
+[4.515315] (-) TimerEvent: {}
+[4.538878] (csm) CommandEnded: {'returncode': 0}
+[4.541431] (csm) JobProgress: {'identifier': 'csm', 'progress': 'build'}
+[4.541470] (csm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maciej/matcher_ws/build/csm', '--', '-j8', '-l8'], 'cwd': '/home/maciej/matcher_ws/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[4.611926] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/home/maciej/ros2_ws/install/ament_cmake/share/ament_cmake/cmake)\n'}
+[4.615543] (-) TimerEvent: {}
+[4.716189] (-) TimerEvent: {}
+[4.816648] (-) TimerEvent: {}
+[4.917342] (-) TimerEvent: {}
+[5.015417] (csm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.017451] (-) TimerEvent: {}
+[5.080004] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.084535] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.097605] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.117562] (-) TimerEvent: {}
+[5.125099] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.156256] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.216334] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.217627] (-) TimerEvent: {}
+[5.224840] (csm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.317789] (-) TimerEvent: {}
+[5.418183] (-) TimerEvent: {}
+[5.508742] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.518332] (-) TimerEvent: {}
+[5.618901] (-) TimerEvent: {}
+[5.719485] (-) TimerEvent: {}
+[5.800238] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.813184] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[5.817033] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/maciej/matcher_ws/build/csm\n'}
+[5.819722] (-) TimerEvent: {}
+[5.897809] (csm) StderrLine: {'line': b"gmake[2]: Warning: File '/home/maciej/matcher_ws/src/csm/src/csm/laser_data.cpp' has modification time 4638 s in the future\n"}
+[5.920637] (-) TimerEvent: {}
+[5.930184] (csm) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o\x1b[0m\n'}
+[5.933126] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o\x1b[0m\n'}
+[5.933452] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o\x1b[0m\n'}
+[5.939101] (csm) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o\x1b[0m\n'}
+[5.951126] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o\x1b[0m\n'}
+[5.956794] (csm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o\x1b[0m\n'}
+[5.957231] (csm) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o\x1b[0m\n'}
+[5.983263] (csm) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o\x1b[0m\n'}
+[6.024191] (-) TimerEvent: {}
+[6.124648] (-) TimerEvent: {}
+[6.225049] (-) TimerEvent: {}
+[6.325565] (-) TimerEvent: {}
+[6.426217] (-) TimerEvent: {}
+[6.527132] (-) TimerEvent: {}
+[6.630698] (-) TimerEvent: {}
+[6.732314] (-) TimerEvent: {}
+[6.835187] (-) TimerEvent: {}
+[6.937030] (-) TimerEvent: {}
+[7.037719] (-) TimerEvent: {}
+[7.138389] (-) TimerEvent: {}
+[7.241738] (-) TimerEvent: {}
+[7.345590] (-) TimerEvent: {}
+[7.446354] (-) TimerEvent: {}
+[7.550871] (-) TimerEvent: {}
+[7.651667] (-) TimerEvent: {}
+[7.752529] (-) TimerEvent: {}
+[7.854808] (-) TimerEvent: {}
+[7.960400] (-) TimerEvent: {}
+[8.066137] (-) TimerEvent: {}
+[8.166811] (-) TimerEvent: {}
+[8.267319] (-) TimerEvent: {}
+[8.368980] (-) TimerEvent: {}
+[8.469459] (-) TimerEvent: {}
+[8.570267] (-) TimerEvent: {}
+[8.674753] (-) TimerEvent: {}
+[8.776038] (-) TimerEvent: {}
+[8.879712] (-) TimerEvent: {}
+[8.982140] (-) TimerEvent: {}
+[9.082884] (-) TimerEvent: {}
+[9.183432] (-) TimerEvent: {}
+[9.284144] (-) TimerEvent: {}
+[9.385401] (-) TimerEvent: {}
+[9.487542] (-) TimerEvent: {}
+[9.588408] (-) TimerEvent: {}
+[9.618842] (csm) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o\x1b[0m\n'}
+[9.621100] (csm) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o\x1b[0m\n'}
+[9.623178] (csm) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o\x1b[0m\n'}
+[9.691495] (-) TimerEvent: {}
+[9.792175] (-) TimerEvent: {}
+[9.892982] (-) TimerEvent: {}
+[9.945135] (csm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o\x1b[0m\n'}
+[9.995553] (-) TimerEvent: {}
+[10.026747] (csm) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o\x1b[0m\n'}
+[10.098631] (-) TimerEvent: {}
+[10.201263] (-) TimerEvent: {}
+[10.304525] (-) TimerEvent: {}
+[10.402567] (csm) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o\x1b[0m\n'}
+[10.405106] (-) TimerEvent: {}
+[10.507430] (-) TimerEvent: {}
+[10.611014] (-) TimerEvent: {}
+[10.658318] (csm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o\x1b[0m\n'}
+[10.712374] (-) TimerEvent: {}
+[10.812895] (-) TimerEvent: {}
+[10.824329] (csm) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o\x1b[0m\n'}
+[10.919808] (-) TimerEvent: {}
+[11.020408] (-) TimerEvent: {}
+[11.125000] (-) TimerEvent: {}
+[11.225681] (-) TimerEvent: {}
+[11.332261] (-) TimerEvent: {}
+[11.438745] (-) TimerEvent: {}
+[11.541729] (-) TimerEvent: {}
+[11.642170] (-) TimerEvent: {}
+[11.742654] (-) TimerEvent: {}
+[11.843172] (-) TimerEvent: {}
+[11.943860] (-) TimerEvent: {}
+[12.049799] (-) TimerEvent: {}
+[12.150395] (-) TimerEvent: {}
+[12.252113] (-) TimerEvent: {}
+[12.353440] (-) TimerEvent: {}
+[12.454900] (-) TimerEvent: {}
+[12.556220] (-) TimerEvent: {}
+[12.660741] (-) TimerEvent: {}
+[12.761192] (-) TimerEvent: {}
+[12.866772] (-) TimerEvent: {}
+[12.967288] (-) TimerEvent: {}
+[13.067871] (-) TimerEvent: {}
+[13.171491] (-) TimerEvent: {}
+[13.272549] (-) TimerEvent: {}
+[13.379160] (-) TimerEvent: {}
+[13.479715] (-) TimerEvent: {}
+[13.586656] (-) TimerEvent: {}
+[13.693769] (-) TimerEvent: {}
+[13.795401] (-) TimerEvent: {}
+[13.814709] (csm) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o\x1b[0m\n'}
+[13.822955] (csm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o\x1b[0m\n'}
+[13.895555] (-) TimerEvent: {}
+[13.996327] (-) TimerEvent: {}
+[14.099690] (-) TimerEvent: {}
+[14.210774] (-) TimerEvent: {}
+[14.287755] (csm) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o\x1b[0m\n'}
+[14.311018] (-) TimerEvent: {}
+[14.414738] (-) TimerEvent: {}
+[14.515819] (-) TimerEvent: {}
+[14.616934] (-) TimerEvent: {}
+[14.640366] (csm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o\x1b[0m\n'}
+[14.695792] (csm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o\x1b[0m\n'}
+[14.717990] (-) TimerEvent: {}
+[14.820234] (-) TimerEvent: {}
+[14.924486] (-) TimerEvent: {}
+[15.025503] (-) TimerEvent: {}
+[15.126520] (-) TimerEvent: {}
+[15.230888] (-) TimerEvent: {}
+[15.277736] (csm) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o\x1b[0m\n'}
+[15.331010] (-) TimerEvent: {}
+[15.433502] (-) TimerEvent: {}
+[15.536656] (-) TimerEvent: {}
+[15.640328] (-) TimerEvent: {}
+[15.740832] (-) TimerEvent: {}
+[15.843485] (-) TimerEvent: {}
+[15.946319] (-) TimerEvent: {}
+[16.047063] (-) TimerEvent: {}
+[16.147602] (-) TimerEvent: {}
+[16.248284] (-) TimerEvent: {}
+[16.350732] (-) TimerEvent: {}
+[16.451353] (-) TimerEvent: {}
+[16.554396] (-) TimerEvent: {}
+[16.654907] (-) TimerEvent: {}
+[16.730687] (csm) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o\x1b[0m\n'}
+[16.755037] (-) TimerEvent: {}
+[16.857412] (-) TimerEvent: {}
+[16.958132] (-) TimerEvent: {}
+[17.058768] (-) TimerEvent: {}
+[17.162756] (-) TimerEvent: {}
+[17.263812] (-) TimerEvent: {}
+[17.364405] (-) TimerEvent: {}
+[17.464906] (-) TimerEvent: {}
+[17.565413] (-) TimerEvent: {}
+[17.666202] (-) TimerEvent: {}
+[17.768684] (-) TimerEvent: {}
+[17.869551] (-) TimerEvent: {}
+[17.971108] (-) TimerEvent: {}
+[18.076107] (-) TimerEvent: {}
+[18.176974] (-) TimerEvent: {}
+[18.277769] (-) TimerEvent: {}
+[18.379023] (-) TimerEvent: {}
+[18.480449] (-) TimerEvent: {}
+[18.581932] (-) TimerEvent: {}
+[18.682655] (-) TimerEvent: {}
+[18.783179] (-) TimerEvent: {}
+[18.883842] (-) TimerEvent: {}
+[18.984401] (-) TimerEvent: {}
+[19.085784] (-) TimerEvent: {}
+[19.186362] (-) TimerEvent: {}
+[19.287092] (-) TimerEvent: {}
+[19.387770] (-) TimerEvent: {}
+[19.488897] (-) TimerEvent: {}
+[19.589629] (-) TimerEvent: {}
+[19.690447] (-) TimerEvent: {}
+[19.791204] (-) TimerEvent: {}
+[19.892971] (-) TimerEvent: {}
+[19.993485] (-) TimerEvent: {}
+[20.094157] (-) TimerEvent: {}
+[20.196599] (-) TimerEvent: {}
+[20.297575] (-) TimerEvent: {}
+[20.398235] (-) TimerEvent: {}
+[20.498668] (-) TimerEvent: {}
+[20.599096] (-) TimerEvent: {}
+[20.699538] (-) TimerEvent: {}
+[20.799970] (-) TimerEvent: {}
+[20.901094] (-) TimerEvent: {}
+[21.001817] (-) TimerEvent: {}
+[21.102565] (-) TimerEvent: {}
+[21.203061] (-) TimerEvent: {}
+[21.303692] (-) TimerEvent: {}
+[21.404137] (-) TimerEvent: {}
+[21.504543] (-) TimerEvent: {}
+[21.605270] (-) TimerEvent: {}
+[21.706414] (-) TimerEvent: {}
+[21.807155] (-) TimerEvent: {}
+[21.907954] (-) TimerEvent: {}
+[22.008546] (-) TimerEvent: {}
+[22.109236] (-) TimerEvent: {}
+[22.209765] (-) TimerEvent: {}
+[22.310532] (-) TimerEvent: {}
+[22.411062] (-) TimerEvent: {}
+[22.511735] (-) TimerEvent: {}
+[22.612228] (-) TimerEvent: {}
+[22.712897] (-) TimerEvent: {}
+[22.813413] (-) TimerEvent: {}
+[22.914167] (-) TimerEvent: {}
+[23.016024] (-) TimerEvent: {}
+[23.116739] (-) TimerEvent: {}
+[23.217158] (-) TimerEvent: {}
+[23.317890] (-) TimerEvent: {}
+[23.418466] (-) TimerEvent: {}
+[23.519537] (-) TimerEvent: {}
+[23.620204] (-) TimerEvent: {}
+[23.720889] (-) TimerEvent: {}
+[23.821749] (-) TimerEvent: {}
+[23.922362] (-) TimerEvent: {}
+[24.022818] (-) TimerEvent: {}
+[24.123207] (-) TimerEvent: {}
+[24.223714] (-) TimerEvent: {}
+[24.324453] (-) TimerEvent: {}
+[24.424983] (-) TimerEvent: {}
+[24.525457] (-) TimerEvent: {}
+[24.625892] (-) TimerEvent: {}
+[24.726747] (-) TimerEvent: {}
+[24.827415] (-) TimerEvent: {}
+[24.927931] (-) TimerEvent: {}
+[25.028413] (-) TimerEvent: {}
+[25.128943] (-) TimerEvent: {}
+[25.229596] (-) TimerEvent: {}
+[25.330350] (-) TimerEvent: {}
+[25.430847] (-) TimerEvent: {}
+[25.531485] (-) TimerEvent: {}
+[25.631847] (-) TimerEvent: {}
+[25.732284] (-) TimerEvent: {}
+[25.832692] (-) TimerEvent: {}
+[25.933096] (-) TimerEvent: {}
+[26.033699] (-) TimerEvent: {}
+[26.134273] (-) TimerEvent: {}
+[26.234835] (-) TimerEvent: {}
+[26.335326] (-) TimerEvent: {}
+[26.435818] (-) TimerEvent: {}
+[26.536345] (-) TimerEvent: {}
+[26.636808] (-) TimerEvent: {}
+[26.737328] (-) TimerEvent: {}
+[26.837980] (-) TimerEvent: {}
+[26.938407] (-) TimerEvent: {}
+[27.038972] (-) TimerEvent: {}
+[27.139541] (-) TimerEvent: {}
+[27.240052] (-) TimerEvent: {}
+[27.340525] (-) TimerEvent: {}
+[27.440931] (-) TimerEvent: {}
+[27.541315] (-) TimerEvent: {}
+[27.641816] (-) TimerEvent: {}
+[27.742246] (-) TimerEvent: {}
+[27.843004] (-) TimerEvent: {}
+[27.943362] (-) TimerEvent: {}
+[28.043703] (-) TimerEvent: {}
+[28.144106] (-) TimerEvent: {}
+[28.244592] (-) TimerEvent: {}
+[28.344952] (-) TimerEvent: {}
+[28.445428] (-) TimerEvent: {}
+[28.546084] (-) TimerEvent: {}
+[28.646954] (-) TimerEvent: {}
+[28.747444] (-) TimerEvent: {}
+[28.847982] (-) TimerEvent: {}
+[28.948452] (-) TimerEvent: {}
+[29.048839] (-) TimerEvent: {}
+[29.149139] (-) TimerEvent: {}
+[29.249450] (-) TimerEvent: {}
+[29.350013] (-) TimerEvent: {}
+[29.450422] (-) TimerEvent: {}
+[29.550844] (-) TimerEvent: {}
+[29.651311] (-) TimerEvent: {}
+[29.751937] (-) TimerEvent: {}
+[29.852608] (-) TimerEvent: {}
+[29.953044] (-) TimerEvent: {}
+[30.053818] (-) TimerEvent: {}
+[30.154489] (-) TimerEvent: {}
+[30.256182] (-) TimerEvent: {}
+[30.356678] (-) TimerEvent: {}
+[30.457349] (-) TimerEvent: {}
+[30.557910] (-) TimerEvent: {}
+[30.658356] (-) TimerEvent: {}
+[30.758771] (-) TimerEvent: {}
+[30.859249] (-) TimerEvent: {}
+[30.961024] (-) TimerEvent: {}
+[31.061717] (-) TimerEvent: {}
+[31.162496] (-) TimerEvent: {}
+[31.263097] (-) TimerEvent: {}
+[31.363663] (-) TimerEvent: {}
+[31.464207] (-) TimerEvent: {}
+[31.564779] (-) TimerEvent: {}
+[31.665310] (-) TimerEvent: {}
+[31.765862] (-) TimerEvent: {}
+[31.866427] (-) TimerEvent: {}
+[31.966872] (-) TimerEvent: {}
+[32.067466] (-) TimerEvent: {}
+[32.168170] (-) TimerEvent: {}
+[32.268925] (-) TimerEvent: {}
+[32.369578] (-) TimerEvent: {}
+[32.470161] (-) TimerEvent: {}
+[32.570907] (-) TimerEvent: {}
+[32.671533] (-) TimerEvent: {}
+[32.772135] (-) TimerEvent: {}
+[32.872782] (-) TimerEvent: {}
+[32.973448] (-) TimerEvent: {}
+[33.074180] (-) TimerEvent: {}
+[33.174755] (-) TimerEvent: {}
+[33.275330] (-) TimerEvent: {}
+[33.375916] (-) TimerEvent: {}
+[33.476582] (-) TimerEvent: {}
+[33.577018] (-) TimerEvent: {}
+[33.677553] (-) TimerEvent: {}
+[33.778121] (-) TimerEvent: {}
+[33.878997] (-) TimerEvent: {}
+[33.980042] (-) TimerEvent: {}
+[34.080495] (-) TimerEvent: {}
+[34.180979] (-) TimerEvent: {}
+[34.285726] (-) TimerEvent: {}
+[34.390924] (-) TimerEvent: {}
+[34.491509] (-) TimerEvent: {}
+[34.592184] (-) TimerEvent: {}
+[34.692823] (-) TimerEvent: {}
+[34.793322] (-) TimerEvent: {}
+[34.893950] (-) TimerEvent: {}
+[34.994360] (-) TimerEvent: {}
+[35.094996] (-) TimerEvent: {}
+[35.195547] (-) TimerEvent: {}
+[35.296376] (-) TimerEvent: {}
+[35.397158] (-) TimerEvent: {}
+[35.497796] (-) TimerEvent: {}
+[35.598378] (-) TimerEvent: {}
+[35.699304] (-) TimerEvent: {}
+[35.799719] (-) TimerEvent: {}
+[35.900396] (-) TimerEvent: {}
+[36.000744] (-) TimerEvent: {}
+[36.101248] (-) TimerEvent: {}
+[36.201781] (-) TimerEvent: {}
+[36.302346] (-) TimerEvent: {}
+[36.402809] (-) TimerEvent: {}
+[36.503797] (-) TimerEvent: {}
+[36.604365] (-) TimerEvent: {}
+[36.704856] (-) TimerEvent: {}
+[36.805301] (-) TimerEvent: {}
+[36.905932] (-) TimerEvent: {}
+[37.006461] (-) TimerEvent: {}
+[37.107024] (-) TimerEvent: {}
+[37.207552] (-) TimerEvent: {}
+[37.307966] (-) TimerEvent: {}
+[37.408300] (-) TimerEvent: {}
+[37.508724] (-) TimerEvent: {}
+[37.609087] (-) TimerEvent: {}
+[37.709421] (-) TimerEvent: {}
+[37.809768] (-) TimerEvent: {}
+[37.910206] (-) TimerEvent: {}
+[38.010584] (-) TimerEvent: {}
+[38.111038] (-) TimerEvent: {}
+[38.211389] (-) TimerEvent: {}
+[38.311931] (-) TimerEvent: {}
+[38.413025] (-) TimerEvent: {}
+[38.513496] (-) TimerEvent: {}
+[38.614347] (-) TimerEvent: {}
+[38.714879] (-) TimerEvent: {}
+[38.815296] (-) TimerEvent: {}
+[38.915614] (-) TimerEvent: {}
+[39.015970] (-) TimerEvent: {}
+[39.116412] (-) TimerEvent: {}
+[39.216906] (-) TimerEvent: {}
+[39.317240] (-) TimerEvent: {}
+[39.417695] (-) TimerEvent: {}
+[39.518340] (-) TimerEvent: {}
+[39.619109] (-) TimerEvent: {}
+[39.720749] (-) TimerEvent: {}
+[39.821199] (-) TimerEvent: {}
+[39.921595] (-) TimerEvent: {}
+[40.022089] (-) TimerEvent: {}
+[40.122749] (-) TimerEvent: {}
+[40.223272] (-) TimerEvent: {}
+[40.323616] (-) TimerEvent: {}
+[40.424003] (-) TimerEvent: {}
+[40.525080] (-) TimerEvent: {}
+[40.625554] (-) TimerEvent: {}
+[40.725997] (-) TimerEvent: {}
+[40.826553] (-) TimerEvent: {}
+[40.927717] (-) TimerEvent: {}
+[41.028142] (-) TimerEvent: {}
+[41.128696] (-) TimerEvent: {}
+[41.229303] (-) TimerEvent: {}
+[41.330425] (-) TimerEvent: {}
+[41.431065] (-) TimerEvent: {}
+[41.495989] (csm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcsm.so\x1b[0m\n'}
+[41.531174] (-) TimerEvent: {}
+[41.631589] (-) TimerEvent: {}
+[41.732028] (-) TimerEvent: {}
+[41.832922] (-) TimerEvent: {}
+[41.934821] (-) TimerEvent: {}
+[42.035260] (-) TimerEvent: {}
+[42.135986] (-) TimerEvent: {}
+[42.237147] (-) TimerEvent: {}
+[42.337759] (-) TimerEvent: {}
+[42.390129] (csm) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[42.422896] (csm) StdoutLine: {'line': b'[100%] Built target csm\n'}
+[42.437967] (-) TimerEvent: {}
+[42.453678] (csm) CommandEnded: {'returncode': 0}
+[42.456043] (csm) JobProgress: {'identifier': 'csm', 'progress': 'install'}
+[42.480240] (csm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maciej/matcher_ws/build/csm'], 'cwd': '/home/maciej/matcher_ws/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/csm'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[42.506245] (csm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.506634] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/lib/libcsm.so\n'}
+[42.517518] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include\n'}
+[42.517858] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm\n'}
+[42.517990] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm/restrict.h\n'}
+[42.518097] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm/laser_data_inline.h\n'}
+[42.518241] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm/algos.h\n'}
+[42.518413] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm/laser_data.h\n'}
+[42.518556] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/csm/csm.h\n'}
+[42.518779] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/gsl_eigen\n'}
+[42.518949] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/..//include/gsl_eigen/gsl_eigen.h\n'}
+[42.519131] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/resource\n'}
+[42.519278] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/resource/csm\n'}
+[42.519433] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/../gsl_eigen\n'}
+[42.519571] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/include/../gsl_eigen/gsl_eigen.h\n'}
+[42.519779] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/library_path.sh\n'}
+[42.519976] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/library_path.dsv\n'}
+[42.520323] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/package_run_dependencies/csm\n'}
+[42.520592] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/parent_prefix_path/csm\n'}
+[42.520810] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/ament_prefix_path.sh\n'}
+[42.521051] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/ament_prefix_path.dsv\n'}
+[42.521239] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/path.sh\n'}
+[42.521416] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/environment/path.dsv\n'}
+[42.521589] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.bash\n'}
+[42.521764] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.sh\n'}
+[42.521943] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.zsh\n'}
+[42.522117] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/local_setup.dsv\n'}
+[42.522284] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/package.dsv\n'}
+[42.522529] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/ament_index/resource_index/packages/csm\n'}
+[42.522833] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[42.523055] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[42.523381] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[42.523603] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/cmake/csmConfig.cmake\n'}
+[42.523736] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/cmake/csmConfig-version.cmake\n'}
+[42.523874] (csm) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/csm/share/csm/package.xml\n'}
+[42.527894] (csm) CommandEnded: {'returncode': 0}
+[42.538053] (-) TimerEvent: {}
+[42.571241] (csm) JobEnded: {'identifier': 'csm', 'rc': 0}
+[42.576160] (ros2_laser_scan_matcher) JobStarted: {'identifier': 'ros2_laser_scan_matcher'}
+[42.611998] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'cmake'}
+[42.613185] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '/home/maciej/matcher_ws/src/ros2_laser_scan_matcher', '-DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/ros2_laser_scan_matcher'], 'cwd': '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/csm:/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[42.638207] (-) TimerEvent: {}
+[42.738704] (-) TimerEvent: {}
+[42.804008] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[42.838806] (-) TimerEvent: {}
+[42.926043] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[42.938919] (-) TimerEvent: {}
+[42.941655] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[43.039024] (-) TimerEvent: {}
+[43.121866] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[43.132143] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[43.132348] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[43.132784] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[43.138271] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[43.139100] (-) TimerEvent: {}
+[43.239422] (-) TimerEvent: {}
+[43.331137] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[43.339708] (-) TimerEvent: {}
+[43.342310] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[43.342717] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[43.344419] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[43.357745] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/home/maciej/ros2_ws/install/ament_cmake/share/ament_cmake/cmake)\n'}
+[43.439791] (-) TimerEvent: {}
+[43.540310] (-) TimerEvent: {}
+[43.641051] (-) TimerEvent: {}
+[43.741493] (-) TimerEvent: {}
+[43.842111] (-) TimerEvent: {}
+[43.942509] (-) TimerEvent: {}
+[44.043513] (-) TimerEvent: {}
+[44.143950] (-) TimerEvent: {}
+[44.244620] (-) TimerEvent: {}
+[44.345229] (-) TimerEvent: {}
+[44.405368] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[44.445299] (-) TimerEvent: {}
+[44.545800] (-) TimerEvent: {}
+[44.646432] (-) TimerEvent: {}
+[44.747019] (-) TimerEvent: {}
+[44.847602] (-) TimerEvent: {}
+[44.884266] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[44.947888] (-) TimerEvent: {}
+[45.048528] (-) TimerEvent: {}
+[45.073796] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[45.112583] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[45.148719] (-) TimerEvent: {}
+[45.155312] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[45.210825] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[45.248808] (-) TimerEvent: {}
+[45.292278] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[45.349164] (-) TimerEvent: {}
+[45.450101] (-) TimerEvent: {}
+[45.491868] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[45.550309] (-) TimerEvent: {}
+[45.650986] (-) TimerEvent: {}
+[45.696302] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[45.721816] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[45.751117] (-) TimerEvent: {}
+[45.851669] (-) TimerEvent: {}
+[45.952151] (-) TimerEvent: {}
+[46.052853] (-) TimerEvent: {}
+[46.069624] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[46.153027] (-) TimerEvent: {}
+[46.158673] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[46.253265] (-) TimerEvent: {}
+[46.280981] (ros2_laser_scan_matcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[46.338208] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[46.353376] (-) TimerEvent: {}
+[46.453798] (-) TimerEvent: {}
+[46.543906] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[46.544154] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[46.553954] (-) TimerEvent: {}
+[46.654571] (-) TimerEvent: {}
+[46.749114] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[46.751017] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[46.754771] (-) TimerEvent: {}
+[46.855334] (-) TimerEvent: {}
+[46.877100] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[46.924476] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[46.955431] (-) TimerEvent: {}
+[47.055847] (-) TimerEvent: {}
+[47.156376] (-) TimerEvent: {}
+[47.256799] (-) TimerEvent: {}
+[47.287102] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[47.356998] (-) TimerEvent: {}
+[47.377658] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[47.379555] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[47.379756] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[47.391478] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[47.392928] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found csm: 0.0.0 (/home/maciej/matcher_ws/install/csm/share/csm/cmake)\n'}
+[47.457396] (-) TimerEvent: {}
+[47.484313] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[47.557446] (-) TimerEvent: {}
+[47.657847] (-) TimerEvent: {}
+[47.722731] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[47.755442] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Generating done\n'}
+[47.757947] (-) TimerEvent: {}
+[47.763428] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Build files have been written to: /home/maciej/matcher_ws/build/ros2_laser_scan_matcher\n'}
+[47.796004] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[47.796856] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'build'}
+[47.797139] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher', '--', '-j8', '-l8'], 'cwd': '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/csm:/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[47.858092] (-) TimerEvent: {}
+[47.863478] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/home/maciej/ros2_ws/install/ament_cmake/share/ament_cmake/cmake)\n'}
+[47.958198] (-) TimerEvent: {}
+[48.058538] (-) TimerEvent: {}
+[48.159026] (-) TimerEvent: {}
+[48.258019] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[48.259198] (-) TimerEvent: {}
+[48.306258] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[48.310189] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[48.319013] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[48.340758] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[48.359326] (-) TimerEvent: {}
+[48.366342] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[48.452722] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[48.459462] (-) TimerEvent: {}
+[48.496232] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[48.506198] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[48.559601] (-) TimerEvent: {}
+[48.660326] (-) TimerEvent: {}
+[48.761751] (-) TimerEvent: {}
+[48.789410] (ros2_laser_scan_matcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[48.857814] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[48.862149] (-) TimerEvent: {}
+[48.884456] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[48.962297] (-) TimerEvent: {}
+[49.021941] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[49.030513] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[49.030977] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[49.042127] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found csm: 0.0.0 (/home/maciej/matcher_ws/install/csm/share/csm/cmake)\n'}
+[49.062552] (-) TimerEvent: {}
+[49.163569] (-) TimerEvent: {}
+[49.265130] (-) TimerEvent: {}
+[49.295683] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[49.323219] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Generating done\n'}
+[49.331317] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Build files have been written to: /home/maciej/matcher_ws/build/ros2_laser_scan_matcher\n'}
+[49.364967] (-) TimerEvent: {}
+[49.447402] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o\x1b[0m\n'}
+[49.465224] (-) TimerEvent: {}
+[49.566014] (-) TimerEvent: {}
+[49.666751] (-) TimerEvent: {}
+[49.767421] (-) TimerEvent: {}
+[49.868559] (-) TimerEvent: {}
+[49.969513] (-) TimerEvent: {}
+[49.991969] (ros2_laser_scan_matcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maciej/matcher_ws/src/ros2_laser_scan_matcher/include/ros2_laser_scan_matcher/laser_scan_matcher.h:47\x1b[m\x1b[K,\n'}
+[49.992504] (ros2_laser_scan_matcher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/maciej/matcher_ws/src/ros2_laser_scan_matcher/src/laser_scan_matcher.cpp:38\x1b[m\x1b[K:\n'}
+[49.992628] (ros2_laser_scan_matcher) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[49.992725] (ros2_laser_scan_matcher) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[49.992796] (ros2_laser_scan_matcher) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[50.069840] (-) TimerEvent: {}
+[50.170658] (-) TimerEvent: {}
+[50.271451] (-) TimerEvent: {}
+[50.372235] (-) TimerEvent: {}
+[50.472666] (-) TimerEvent: {}
+[50.573164] (-) TimerEvent: {}
+[50.673469] (-) TimerEvent: {}
+[50.773864] (-) TimerEvent: {}
+[50.874411] (-) TimerEvent: {}
+[50.975093] (-) TimerEvent: {}
+[51.075573] (-) TimerEvent: {}
+[51.176951] (-) TimerEvent: {}
+[51.277700] (-) TimerEvent: {}
+[51.378081] (-) TimerEvent: {}
+[51.478394] (-) TimerEvent: {}
+[51.578878] (-) TimerEvent: {}
+[51.679373] (-) TimerEvent: {}
+[51.780076] (-) TimerEvent: {}
+[51.880591] (-) TimerEvent: {}
+[51.981061] (-) TimerEvent: {}
+[52.081448] (-) TimerEvent: {}
+[52.181836] (-) TimerEvent: {}
+[52.282143] (-) TimerEvent: {}
+[52.382597] (-) TimerEvent: {}
+[52.483115] (-) TimerEvent: {}
+[52.583545] (-) TimerEvent: {}
+[52.683973] (-) TimerEvent: {}
+[52.784509] (-) TimerEvent: {}
+[52.885123] (-) TimerEvent: {}
+[52.985558] (-) TimerEvent: {}
+[53.086187] (-) TimerEvent: {}
+[53.186622] (-) TimerEvent: {}
+[53.287229] (-) TimerEvent: {}
+[53.387659] (-) TimerEvent: {}
+[53.488024] (-) TimerEvent: {}
+[53.588519] (-) TimerEvent: {}
+[53.688995] (-) TimerEvent: {}
+[53.789567] (-) TimerEvent: {}
+[53.890007] (-) TimerEvent: {}
+[53.990377] (-) TimerEvent: {}
+[54.091053] (-) TimerEvent: {}
+[54.191571] (-) TimerEvent: {}
+[54.292247] (-) TimerEvent: {}
+[54.392736] (-) TimerEvent: {}
+[54.493147] (-) TimerEvent: {}
+[54.593771] (-) TimerEvent: {}
+[54.694134] (-) TimerEvent: {}
+[54.794730] (-) TimerEvent: {}
+[54.895413] (-) TimerEvent: {}
+[54.995972] (-) TimerEvent: {}
+[55.096399] (-) TimerEvent: {}
+[55.196967] (-) TimerEvent: {}
+[55.298215] (-) TimerEvent: {}
+[55.399284] (-) TimerEvent: {}
+[55.500083] (-) TimerEvent: {}
+[55.600445] (-) TimerEvent: {}
+[55.700876] (-) TimerEvent: {}
+[55.801485] (-) TimerEvent: {}
+[55.901960] (-) TimerEvent: {}
+[56.002647] (-) TimerEvent: {}
+[56.103031] (-) TimerEvent: {}
+[56.203517] (-) TimerEvent: {}
+[56.303984] (-) TimerEvent: {}
+[56.404332] (-) TimerEvent: {}
+[56.504757] (-) TimerEvent: {}
+[56.605208] (-) TimerEvent: {}
+[56.705580] (-) TimerEvent: {}
+[56.806094] (-) TimerEvent: {}
+[56.906640] (-) TimerEvent: {}
+[57.006937] (-) TimerEvent: {}
+[57.107285] (-) TimerEvent: {}
+[57.207630] (-) TimerEvent: {}
+[57.307949] (-) TimerEvent: {}
+[57.408251] (-) TimerEvent: {}
+[57.508557] (-) TimerEvent: {}
+[57.608887] (-) TimerEvent: {}
+[57.709287] (-) TimerEvent: {}
+[57.809733] (-) TimerEvent: {}
+[57.910149] (-) TimerEvent: {}
+[58.010506] (-) TimerEvent: {}
+[58.110975] (-) TimerEvent: {}
+[58.211569] (-) TimerEvent: {}
+[58.311938] (-) TimerEvent: {}
+[58.412432] (-) TimerEvent: {}
+[58.513168] (-) TimerEvent: {}
+[58.613730] (-) TimerEvent: {}
+[58.714390] (-) TimerEvent: {}
+[58.815064] (-) TimerEvent: {}
+[58.915556] (-) TimerEvent: {}
+[59.015903] (-) TimerEvent: {}
+[59.116342] (-) TimerEvent: {}
+[59.216756] (-) TimerEvent: {}
+[59.317290] (-) TimerEvent: {}
+[59.417881] (-) TimerEvent: {}
+[59.518320] (-) TimerEvent: {}
+[59.618791] (-) TimerEvent: {}
+[59.719197] (-) TimerEvent: {}
+[59.819672] (-) TimerEvent: {}
+[59.920311] (-) TimerEvent: {}
+[60.020722] (-) TimerEvent: {}
+[60.121326] (-) TimerEvent: {}
+[60.221907] (-) TimerEvent: {}
+[60.322812] (-) TimerEvent: {}
+[60.423427] (-) TimerEvent: {}
+[60.524131] (-) TimerEvent: {}
+[60.625348] (-) TimerEvent: {}
+[60.725656] (-) TimerEvent: {}
+[60.826068] (-) TimerEvent: {}
+[60.926514] (-) TimerEvent: {}
+[61.027186] (-) TimerEvent: {}
+[61.127549] (-) TimerEvent: {}
+[61.227918] (-) TimerEvent: {}
+[61.328320] (-) TimerEvent: {}
+[61.428740] (-) TimerEvent: {}
+[61.529180] (-) TimerEvent: {}
+[61.629979] (-) TimerEvent: {}
+[61.730681] (-) TimerEvent: {}
+[61.833319] (-) TimerEvent: {}
+[61.933951] (-) TimerEvent: {}
+[62.034630] (-) TimerEvent: {}
+[62.135335] (-) TimerEvent: {}
+[62.235788] (-) TimerEvent: {}
+[62.336144] (-) TimerEvent: {}
+[62.436563] (-) TimerEvent: {}
+[62.536997] (-) TimerEvent: {}
+[62.637645] (-) TimerEvent: {}
+[62.738505] (-) TimerEvent: {}
+[62.838871] (-) TimerEvent: {}
+[62.939277] (-) TimerEvent: {}
+[63.039777] (-) TimerEvent: {}
+[63.140184] (-) TimerEvent: {}
+[63.240641] (-) TimerEvent: {}
+[63.341025] (-) TimerEvent: {}
+[63.441438] (-) TimerEvent: {}
+[63.542088] (-) TimerEvent: {}
+[63.642639] (-) TimerEvent: {}
+[63.743069] (-) TimerEvent: {}
+[63.843449] (-) TimerEvent: {}
+[63.943838] (-) TimerEvent: {}
+[64.044344] (-) TimerEvent: {}
+[64.144966] (-) TimerEvent: {}
+[64.245413] (-) TimerEvent: {}
+[64.346109] (-) TimerEvent: {}
+[64.446795] (-) TimerEvent: {}
+[64.547274] (-) TimerEvent: {}
+[64.647722] (-) TimerEvent: {}
+[64.748112] (-) TimerEvent: {}
+[64.848673] (-) TimerEvent: {}
+[64.949066] (-) TimerEvent: {}
+[65.049385] (-) TimerEvent: {}
+[65.149748] (-) TimerEvent: {}
+[65.250058] (-) TimerEvent: {}
+[65.350408] (-) TimerEvent: {}
+[65.450686] (-) TimerEvent: {}
+[65.551076] (-) TimerEvent: {}
+[65.651484] (-) TimerEvent: {}
+[65.751967] (-) TimerEvent: {}
+[65.852439] (-) TimerEvent: {}
+[65.952828] (-) TimerEvent: {}
+[66.053250] (-) TimerEvent: {}
+[66.154147] (-) TimerEvent: {}
+[66.254775] (-) TimerEvent: {}
+[66.355545] (-) TimerEvent: {}
+[66.456220] (-) TimerEvent: {}
+[66.557704] (-) TimerEvent: {}
+[66.658511] (-) TimerEvent: {}
+[66.759269] (-) TimerEvent: {}
+[66.861442] (-) TimerEvent: {}
+[66.962358] (-) TimerEvent: {}
+[67.062833] (-) TimerEvent: {}
+[67.163343] (-) TimerEvent: {}
+[67.264024] (-) TimerEvent: {}
+[67.364698] (-) TimerEvent: {}
+[67.465093] (-) TimerEvent: {}
+[67.565557] (-) TimerEvent: {}
+[67.665961] (-) TimerEvent: {}
+[67.766327] (-) TimerEvent: {}
+[67.866764] (-) TimerEvent: {}
+[67.967263] (-) TimerEvent: {}
+[68.067618] (-) TimerEvent: {}
+[68.168480] (-) TimerEvent: {}
+[68.269126] (-) TimerEvent: {}
+[68.369462] (-) TimerEvent: {}
+[68.469779] (-) TimerEvent: {}
+[68.570130] (-) TimerEvent: {}
+[68.670472] (-) TimerEvent: {}
+[68.770966] (-) TimerEvent: {}
+[68.871537] (-) TimerEvent: {}
+[68.971964] (-) TimerEvent: {}
+[69.072374] (-) TimerEvent: {}
+[69.172708] (-) TimerEvent: {}
+[69.273029] (-) TimerEvent: {}
+[69.373359] (-) TimerEvent: {}
+[69.473706] (-) TimerEvent: {}
+[69.574109] (-) TimerEvent: {}
+[69.674483] (-) TimerEvent: {}
+[69.774793] (-) TimerEvent: {}
+[69.875116] (-) TimerEvent: {}
+[69.975507] (-) TimerEvent: {}
+[70.075882] (-) TimerEvent: {}
+[70.176351] (-) TimerEvent: {}
+[70.276860] (-) TimerEvent: {}
+[70.377434] (-) TimerEvent: {}
+[70.477803] (-) TimerEvent: {}
+[70.578162] (-) TimerEvent: {}
+[70.678532] (-) TimerEvent: {}
+[70.778924] (-) TimerEvent: {}
+[70.879305] (-) TimerEvent: {}
+[70.979767] (-) TimerEvent: {}
+[71.080545] (-) TimerEvent: {}
+[71.181215] (-) TimerEvent: {}
+[71.249488] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable laser_scan_matcher\x1b[0m\n'}
+[71.281317] (-) TimerEvent: {}
+[71.381709] (-) TimerEvent: {}
+[71.482295] (-) TimerEvent: {}
+[71.582677] (-) TimerEvent: {}
+[71.683051] (-) TimerEvent: {}
+[71.783467] (-) TimerEvent: {}
+[71.883939] (-) TimerEvent: {}
+[71.984663] (-) TimerEvent: {}
+[72.085195] (-) TimerEvent: {}
+[72.185704] (-) TimerEvent: {}
+[72.286218] (-) TimerEvent: {}
+[72.386768] (-) TimerEvent: {}
+[72.487284] (-) TimerEvent: {}
+[72.587744] (-) TimerEvent: {}
+[72.688221] (-) TimerEvent: {}
+[72.788891] (-) TimerEvent: {}
+[72.889382] (-) TimerEvent: {}
+[72.989749] (-) TimerEvent: {}
+[73.090110] (-) TimerEvent: {}
+[73.186054] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] Built target laser_scan_matcher\n'}
+[73.190234] (-) TimerEvent: {}
+[73.218648] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[73.219783] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'install'}
+[73.220043] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher'], 'cwd': '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'maciej'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maciej/matcher_ws/install/csm/lib:/home/maciej/ros2_ws/install/webots_ros2_control/lib:/home/maciej/ros2_ws/install/webots_ros2_driver/lib:/home/maciej/ros2_ws/install/webots_ros2_msgs/lib:/home/maciej/ros2_ws/install/slam_toolbox/lib:/home/maciej/ros2_ws/install/nav2_rviz_plugins/lib:/home/maciej/ros2_ws/install/robot_hardware_interface/lib:/home/maciej/ros2_ws/install/resource_retriever/lib:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp/lib:/home/maciej/ros2_ws/install/pendulum_msgs/lib:/home/maciej/ros2_ws/install/nav2_smoother/lib:/home/maciej/ros2_ws/install/nav2_controller/lib:/home/maciej/ros2_ws/install/dwb_plugins/lib:/home/maciej/ros2_ws/install/dwb_critics/lib:/home/maciej/ros2_ws/install/dwb_core/lib:/home/maciej/ros2_ws/install/nav_2d_utils/lib:/home/maciej/ros2_ws/install/dwb_msgs/lib:/home/maciej/ros2_ws/install/nav_2d_msgs/lib:/home/maciej/ros2_ws/install/nav2_waypoint_follower/lib:/home/maciej/ros2_ws/install/nav2_theta_star_planner/lib:/home/maciej/ros2_ws/install/nav2_smac_planner/lib:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller/lib:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller/lib:/home/maciej/ros2_ws/install/nav2_planner/lib:/home/maciej/ros2_ws/install/nav2_navfn_planner/lib:/home/maciej/ros2_ws/install/nav2_mppi_controller/lib:/home/maciej/ros2_ws/install/nav2_constrained_smoother/lib:/home/maciej/ros2_ws/install/nav2_bt_navigator/lib:/home/maciej/ros2_ws/install/nav2_behaviors/lib:/home/maciej/ros2_ws/install/nav2_collision_monitor/lib:/home/maciej/ros2_ws/install/costmap_queue/lib:/home/maciej/ros2_ws/install/nav2_costmap_2d/lib:/home/maciej/ros2_ws/install/nav2_voxel_grid/lib:/home/maciej/ros2_ws/install/nav2_velocity_smoother/lib:/home/maciej/ros2_ws/install/nav2_map_server/lib:/home/maciej/ros2_ws/install/nav2_lifecycle_manager/lib:/home/maciej/ros2_ws/install/nav2_behavior_tree/lib:/home/maciej/ros2_ws/install/nav2_amcl/lib:/home/maciej/ros2_ws/install/nav2_util/lib:/home/maciej/ros2_ws/install/nav2_msgs/lib:/home/maciej/ros2_ws/install/logging_demo/lib:/home/maciej/ros2_ws/install/image_tools/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp_native/lib:/home/maciej/ros2_ws/install/demo_nodes_cpp/lib:/home/maciej/ros2_ws/install/composition/lib:/home/maciej/ros2_ws/install/action_tutorials_cpp/lib:/home/maciej/ros2_ws/install/action_tutorials_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maciej'), ('OLDPWD', '/home/maciej/matcher_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/maciej/.nvm/versions/node/v16.20.2/bin'), ('NVM_INC', '/home/maciej/.nvm/versions/node/v16.20.2/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('SYSTEMD_EXEC_PID', '5160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/maciej/.nvm'), ('COLCON_PREFIX_PATH', '/home/maciej/matcher_ws/install:/home/maciej/ros2_ws/install:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maciej'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maciej'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/worlds:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world/share/aws_robomaker_small_warehouse_world/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maciej/google-cloud-sdk/bin:/home/maciej/.nvm/versions/node/v16.20.2/bin:/home/maciej/ros2_ws/install/pendulum_control/bin:/opt/ros/humble/bin:/home/maciej/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/maciej/go/bin'), ('SESSION_MANAGER', 'local/maciej-TUF-Gaming-FX505DT:@/tmp/.ICE-unix/2756,unix/maciej-TUF-Gaming-FX505DT:/tmp/.ICE-unix/2756'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5354786b_1f56_41f5_828d_037902910cd9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/matcher_ws/install/csm:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maciej/matcher_ws/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maciej/ros2_ws/build/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_universal_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tiago/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tests/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_tesla/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_mavic/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/webots_ros2_epuck:/home/maciej/ros2_ws/install/webots_ros2_epuck/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/webots_ros2_driver/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/webots_ros2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/topic_monitor:/home/maciej/ros2_ws/install/topic_monitor/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/self_balancing_robot:/home/maciej/ros2_ws/install/self_balancing_robot/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/resource_retriever/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/quality_of_service_demo_py:/home/maciej/ros2_ws/install/quality_of_service_demo_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/pendulum_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/nav2_simple_commander:/home/maciej/ros2_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/nav2_common/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/install/logging_demo/local/lib/python3.10/dist-packages:/home/maciej/ros2_ws/build/lifecycle_py:/home/maciej/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/joy_tester:/home/maciej/ros2_ws/install/joy_tester/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/demo_nodes_py:/home/maciej/ros2_ws/install/demo_nodes_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/build/action_tutorials_py:/home/maciej/ros2_ws/install/action_tutorials_py/lib/python3.10/site-packages:/home/maciej/ros2_ws/install/action_tutorials_interfaces/local/lib/python3.10/dist-packages:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pl_PL.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maciej/matcher_ws/install/csm:/home/maciej/matcher_ws/install/ros2_laser_scan_matcher:/home/maciej/ros2_ws/install/webots_ros2_control:/home/maciej/ros2_ws/install/webots_ros2_driver:/home/maciej/ros2_ws/install/webots_ros2_msgs:/home/maciej/ros2_ws/install/urdf_example:/home/maciej/ros2_ws/install/topic_statistics_demo:/home/maciej/ros2_ws/install/nav2_system_tests:/home/maciej/ros2_ws/install/nav2_bringup:/home/maciej/ros2_ws/install/slam_toolbox:/home/maciej/ros2_ws/install/navigation2:/home/maciej/ros2_ws/install/nav2_rviz_plugins:/home/maciej/ros2_ws/install/rviz_assimp_vendor:/home/maciej/ros2_ws/install/robot_hardware_interface:/home/maciej/ros2_ws/install/robot:/home/maciej/ros2_ws/install/resource_retriever:/home/maciej/ros2_ws/install/quality_of_service_demo_cpp:/home/maciej/ros2_ws/install/pendulum_control:/home/maciej/ros2_ws/install/pendulum_msgs:/home/maciej/ros2_ws/install/orp_orzeu:/home/maciej/ros2_ws/install/nav2_smoother:/home/maciej/ros2_ws/install/nav2_dwb_controller:/home/maciej/ros2_ws/install/nav2_controller:/home/maciej/ros2_ws/install/dwb_plugins:/home/maciej/ros2_ws/install/dwb_critics:/home/maciej/ros2_ws/install/dwb_core:/home/maciej/ros2_ws/install/nav_2d_utils:/home/maciej/ros2_ws/install/dwb_msgs:/home/maciej/ros2_ws/install/nav_2d_msgs:/home/maciej/ros2_ws/install/nav2_waypoint_follower:/home/maciej/ros2_ws/install/nav2_theta_star_planner:/home/maciej/ros2_ws/install/nav2_smac_planner:/home/maciej/ros2_ws/install/nav2_rotation_shim_controller:/home/maciej/ros2_ws/install/nav2_regulated_pure_pursuit_controller:/home/maciej/ros2_ws/install/nav2_planner:/home/maciej/ros2_ws/install/nav2_navfn_planner:/home/maciej/ros2_ws/install/nav2_mppi_controller:/home/maciej/ros2_ws/install/nav2_constrained_smoother:/home/maciej/ros2_ws/install/nav2_bt_navigator:/home/maciej/ros2_ws/install/nav2_behaviors:/home/maciej/ros2_ws/install/nav2_core:/home/maciej/ros2_ws/install/nav2_collision_monitor:/home/maciej/ros2_ws/install/costmap_queue:/home/maciej/ros2_ws/install/nav2_costmap_2d:/home/maciej/ros2_ws/install/nav2_voxel_grid:/home/maciej/ros2_ws/install/nav2_velocity_smoother:/home/maciej/ros2_ws/install/nav2_map_server:/home/maciej/ros2_ws/install/nav2_lifecycle_manager:/home/maciej/ros2_ws/install/nav2_behavior_tree:/home/maciej/ros2_ws/install/nav2_amcl:/home/maciej/ros2_ws/install/nav2_util:/home/maciej/ros2_ws/install/nav2_test_utils:/home/maciej/ros2_ws/install/nav2_msgs:/home/maciej/ros2_ws/install/nav2_common:/home/maciej/ros2_ws/install/mycobot_gazebo:/home/maciej/ros2_ws/install/my_bot:/home/maciej/ros2_ws/install/logging_demo:/home/maciej/ros2_ws/install/lifecycle:/home/maciej/ros2_ws/install/libcurl_vendor:/home/maciej/ros2_ws/install/intra_process_demo:/home/maciej/ros2_ws/install/image_tools:/home/maciej/ros2_ws/install/dummy_robot_bringup:/home/maciej/ros2_ws/install/dummy_sensors:/home/maciej/ros2_ws/install/dummy_map_server:/home/maciej/ros2_ws/install/demo_nodes_cpp_native:/home/maciej/ros2_ws/install/demo_nodes_cpp:/home/maciej/ros2_ws/install/composition:/home/maciej/ros2_ws/install/aws_robomaker_small_warehouse_world:/home/maciej/ros2_ws/install/articubot_one:/home/maciej/ros2_ws/install/ament_cmake:/home/maciej/ros2_ws/install/action_tutorials_cpp:/home/maciej/ros2_ws/install/action_tutorials_interfaces:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_xl_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/rosbot_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/ros_components_description:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/open_manipulator_x_description:/home/maciej/ros2_ws/install/webots_ros2:/home/maciej/ros2_ws/install/webots_ros2_universal_robot:/home/maciej/ros2_ws/install/webots_ros2_turtlebot:/home/maciej/ros2_ws/install/webots_ros2_tiago:/home/maciej/ros2_ws/install/webots_ros2_tests:/home/maciej/ros2_ws/install/webots_ros2_tesla:/home/maciej/ros2_ws/install/webots_ros2_mavic:/home/maciej/ros2_ws/install/webots_ros2_epuck:/home/maciej/ros2_ws/install/topic_monitor:/home/maciej/ros2_ws/install/self_balancing_robot:/home/maciej/ros2_ws/install/quality_of_service_demo_py:/home/maciej/ros2_ws/install/nav2_simple_commander:/home/maciej/ros2_ws/install/lifecycle_py:/home/maciej/ros2_ws/install/joy_tester:/home/maciej/ros2_ws/install/demo_nodes_py:/home/maciej/ros2_ws/install/action_tutorials_py:/home/maciej/Sim/MecHaRo-Lab_ROSBot2Pro/ws_ros2_husarion/install/webots_ros2_husarion:/opt/ros/humble')]), 'shell': False}
+[73.241177] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[73.241474] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher\n'}
+[73.248876] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Set runtime path of "/home/maciej/matcher_ws/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher" to ""\n'}
+[73.249142] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/package_run_dependencies/ros2_laser_scan_matcher\n'}
+[73.249449] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/parent_prefix_path/ros2_laser_scan_matcher\n'}
+[73.249754] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.sh\n'}
+[73.249974] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.dsv\n'}
+[73.250196] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.sh\n'}
+[73.250421] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.dsv\n'}
+[73.250665] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.bash\n'}
+[73.250904] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.sh\n'}
+[73.251208] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.zsh\n'}
+[73.251428] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.dsv\n'}
+[73.251671] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv\n'}
+[73.252067] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/packages/ros2_laser_scan_matcher\n'}
+[73.252319] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig.cmake\n'}
+[73.252473] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig-version.cmake\n'}
+[73.252660] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/maciej/matcher_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.xml\n'}
+[73.256894] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[73.279652] (ros2_laser_scan_matcher) JobEnded: {'identifier': 'ros2_laser_scan_matcher', 'rc': 0}
+[73.280761] (-) EventReactorShutdown: {}

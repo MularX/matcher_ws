@@ -1,0 +1,43 @@
+[0.063s] Invoking command in '/home/maciej/matcher_ws/build/cartographer_ros_docs': /usr/bin/cmake /home/maciej/matcher_ws/src/cartographer_ros/docs -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/cartographer_ros_docs
+[0.089s] [0mCMake Deprecation Warning at CMakeLists.txt:15 (cmake_minimum_required):
+[0.089s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.089s]   CMake.
+[0.089s] 
+[0.089s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.089s]   CMake that the project does not need compatibility with older versions.
+[0.090s] 
+[0.090s] [0m
+[0.383s] -- The C compiler identification is GNU 11.4.0
+[0.601s] -- The CXX compiler identification is GNU 11.4.0
+[0.622s] -- Detecting C compiler ABI info
+[0.851s] -- Detecting C compiler ABI info - done
+[0.867s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.868s] -- Detecting C compile features
+[0.869s] -- Detecting C compile features - done
+[0.876s] -- Detecting CXX compiler ABI info
+[1.131s] -- Detecting CXX compiler ABI info - done
+[1.149s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.149s] -- Detecting CXX compile features
+[1.150s] -- Detecting CXX compile features - done
+[1.230s] [33mCMake Warning at CMakeLists.txt:19 (find_package):
+[1.230s]   By not providing "FindSphinx.cmake" in CMAKE_MODULE_PATH this project has
+[1.231s]   asked CMake to find a package configuration file provided by "Sphinx", but
+[1.231s]   CMake did not find one.
+[1.231s] 
+[1.231s]   Could not find a package configuration file provided by "Sphinx" with any
+[1.231s]   of the following names:
+[1.231s] 
+[1.231s]     SphinxConfig.cmake
+[1.231s]     sphinx-config.cmake
+[1.231s] 
+[1.231s]   Add the installation prefix of "Sphinx" to CMAKE_PREFIX_PATH or set
+[1.231s]   "Sphinx_DIR" to a directory containing one of the above files.  If "Sphinx"
+[1.232s]   provides a separate development package or SDK, be sure it has been
+[1.232s]   installed.
+[1.232s] 
+[1.232s] [0m
+[1.232s] -- Configuring done
+[1.234s] -- Generating done
+[1.235s] -- Build files have been written to: /home/maciej/matcher_ws/build/cartographer_ros_docs
+[1.242s] Invoked command in '/home/maciej/matcher_ws/build/cartographer_ros_docs' returned '0': /usr/bin/cmake /home/maciej/matcher_ws/src/cartographer_ros/docs -DCMAKE_INSTALL_PREFIX=/home/maciej/matcher_ws/install/cartographer_ros_docs
+[1.244s] Invoking command in '/home/maciej/matcher_ws/build/cartographer_ros_docs': /usr/bin/cmake --build /home/maciej/matcher_ws/build/cartographer_ros_docs -- -j8 -l8
