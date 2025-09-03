@@ -1,0 +1,7 @@
+odom publishee odm to map
+statix publishee base lino odom 
+wejść w matcher ws source 
+i zrunowac launcha cartographer z turtlebot 
+ewentualnie matcher laser odom
+Maciej
+static publisher base link odom tam jest
