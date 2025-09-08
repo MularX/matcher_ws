@@ -1,11 +1,11 @@
 TERMINAL 1:
 
-odom publishee odm to map
+odom publisher odm to map
 ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom
 
 TERMINAL 2:
 
-statix publishee base lino odom 
+static publisher base link to odom 
 ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 odom base_link
 
 TERMINAL 3:
