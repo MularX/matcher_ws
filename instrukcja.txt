@@ -1,7 +1,21 @@
+TERMINAL 1:
+
 odom publishee odm to map
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom
+
+TERMINAL 2:
+
 statix publishee base lino odom 
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 odom base_link
+
+TERMINAL 3:
+
 wejść w matcher ws source 
 i zrunowac launcha cartographer z turtlebot 
+
+TERMINAL 4:
+
 ewentualnie matcher laser odom
-Maciej
+
+TERMINAL 5:
 static publisher base link odom tam jest
