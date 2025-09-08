@@ -12,10 +12,14 @@ TERMINAL 3:
 
 wejść w matcher ws source 
 i zrunowac launcha cartographer z turtlebot 
+ros2 launch turtlebot3_cartographer cartographer.launch.py 
+
 
 TERMINAL 4:
 
 ewentualnie matcher laser odom
+ros2 run ros2_laser_scan_matcher 
+
 
 TERMINAL 5:
 static publisher base link odom tam jest
